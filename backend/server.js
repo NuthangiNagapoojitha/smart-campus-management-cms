@@ -15,6 +15,7 @@ const paymentRoute = require("./routes/payment");
 // Restrict CORS to the deployed Vercel frontend and local dev
 const allowedOrigins = [
   process.env.FRONTEND_URL || "http://localhost:5173",
+                              "https://smart-campus-management-cms.vercel.app"
 ];
 app.use(cors({
   origin: (origin, callback) => {
